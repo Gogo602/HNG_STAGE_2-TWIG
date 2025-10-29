@@ -1,0 +1,31 @@
+{# components/Navbar.twig #}
+
+<nav
+  class="md:flex items-center justify-between space-y-5 bg-[#131022]/80 px-5 py-3 fixed z-10 w-full border-b backdrop-blur">
+      <h3 class="text-xl font-bold pt-1">
+        {% if isLoggedIn %}
+           <a href="/user">Dashboard</a>
+        {% else %}
+           <a href="/">Ticket-App</a>
+        {% endif %}
+      </h3>
+      {% if isLoggedIn %}
+        <ul class="flex items-center justify-between gap-5 font-semibold">
+          <li class="bg-[#5435EE] rounded-lg px-5 py-2">
+              <a href='/ticket-management'>Manage Tickets</a>
+          </li>
+          <li class="bg-[#5435EE] rounded-lg px-5 py-2">
+              <a href='/logout'>Logout</a>
+          </li>
+      </ul>
+  {% else %}
+      <ul class="flex items-center justify-between gap-5 font-semibold">
+          <li class="bg-gray-500 rounded-lg px-5 py-2">
+              <a href='/login'>Login</a>
+          </li>
+          <li class="bg-[#5435EE] rounded-lg px-5 py-2">
+              <a href='/register'>Get Started</a>
+          </li>
+      </ul>
+  {% endif %}
+</nav>

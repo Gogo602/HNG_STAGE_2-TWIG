@@ -1,0 +1,26 @@
+{
+  "name": "twig-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "tailwind:watch": "npx @tailwindcss/cli -i ./public/css/input.css -o ./public/css/output.css --content './templates/**/*.twig' --watch"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gogo602/HNG_STAGE_2-TWIG.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Gogo602/HNG_STAGE_2-TWIG/issues"
+  },
+  "homepage": "https://github.com/Gogo602/HNG_STAGE_2-TWIG#readme",
+  "description": "",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.16",
+    "tailwindcss": "^4.1.16"
+  }
+}

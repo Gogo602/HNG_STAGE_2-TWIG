@@ -1,0 +1,17 @@
+{# templates/layouts/base.twig #}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Ticket App{% endblock %}</title>
+     <link rel="stylesheet" href="/public/css/output.css">
+</head>
+<body class="text-white">
+
+    {% include 'components/Navbar.twig' %}
+
+    <main class="pt-25">
+        {% block content %}{% endblock %}
+    </main>
+
+</body>
+</html>
